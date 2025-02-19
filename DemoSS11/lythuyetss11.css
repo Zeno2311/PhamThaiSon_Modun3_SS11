@@ -1,0 +1,65 @@
+/* h1 {
+    background-color: red;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        background-color: blue;
+    }
+}
+
+/* Desktop - Máy tính để bàn */
+/* h3 {
+    background-color: chocolate;
+}
+
+/* Máy tính xách tay */
+/* @media screen and (max-width: 1200px) {
+    h3 {
+        background-color: blueviolet;
+    }
+} */ 
+
+/* Tablet-Ngang */
+/* @media screen and (max-width: 1024px) {
+    h3 {
+        background-color: rgb(129, 64, 64);
+    }
+} */
+
+/* Tablet-Doc */
+/* @media screen and (max-width: 768px) {
+    h3 {
+        background-color: rgb(20, 238, 24);
+    }    
+} */
+
+/* Mobile- Dien thoai di dong */
+/* @media screen and (max-width: 468px) {
+    h3 {
+        background-color: rgb(226, 125, 43);
+    }    
+} */ 
+
+/* mobile-fist */
+h1 {
+    background-color: red;
+}
+/* tablet-doc */
+@media screen and (min-width: 480px) {
+    h1 {
+        background-color: blue;
+    }
+}
+/* tablet-ngang */
+@media screen and (min-width: 768px) {
+    h1 {
+        background-color: aqua;
+    }    
+}
+/* desktop-may tinh xach tay */
+@media screen and (min-width: 1200px) {
+    h1 {
+        background-color: yellow;
+    }
+}

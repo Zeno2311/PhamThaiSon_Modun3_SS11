@@ -4,99 +4,120 @@
     box-sizing: border-box;
 }
 
-.slay {
-    padding: 20px 0;
-    background-color: #5995DB;
-}
-
-header {
-    padding: 90px 0;
-    background-color: #B2D6FF;
-    text-align: center;
-}
-
-section {
+.container {
     display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B2D6FF;
     height: 150px;
 }
 
-section div:nth-child(1) {
+.main {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+}
+
+.child1 {
+    display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     background-color: #F5CF8D;
+    height: 170px;
     width: 33,3%;
     flex-grow: 1;
 }
 
-section div:nth-child(2) {
+.child2 {
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     background-color: #C8C6FA;
+    height: 170px;
     width: 33,3%;
     flex-grow: 1;
 }
 
-section div:nth-child(3) {
+.child3 {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     background-color: #F09A9D;
+    height: 170px;
     width: 33,3%;
     flex-grow: 1;
 }
 
-main {
+.main2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0;
     background-color: #D7E9FE;
+    width: 100%;
+    height: 170px;
 }
 
-footer {
-    padding: 110px 0;
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #EBEDF0;
-    text-align: center;
+    width: 100%;
+    height: 170px;
 }
 
-@media screen and (max-width: 768px) {
-    .box {
-        flex-direction: column;
-    }
-
-    .box {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .box footer {
+@media screen and (max-width:1200px) {
+    .main .footer {
         order: 1;
     }
 
-    .box main {
+    .main .main2 {
         order: 2;
-        flex: 1; 
+        width: 50%;
     }
 
-    .box section {
+    .main .child1 {
         order: 3;
-        display: flex;
-        flex-direction: row;
+        width: 50%;
     }
 
-    .box section div {
-        flex: 1 1 33,3%;
-        box-sizing: border-box;
+    .main .child2 {
+        order: 4;
+        width: 50%;
+    }
+
+    .main .child3 {
+        order: 5;
+        width: 50%;
     }
 }
 
-@media screen and (max-width: 468px) {
-    .box section {
+@media screen and (max-width:768px) {
+    .main {
         flex-direction: column;
     }
 
+    .main .child1 {
+        width: 100%;
+    }
+
+    .main .child2 {
+        width: 100%;
+    }
+
+    .main .child3 {
+        width: 100%;
+    }
+
+    .main .main2 {
+        width: 100%;
+    }
+
+    .main .footer {
+        width: 100%;
+    }
 }
